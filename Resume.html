@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudit's Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://kit.fontawesome.com/6fe5a7db0c.js" crossorigin="anonymous"></script>
+    <script defer src="/resume.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class='container p-0'>
+            <nav>
+                <h1><span style="color: red;">M</span>UDIT <br> <span style="color: red;">R</span>OHILLA</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 class="glass">Hi, I'm <span class="auto-type" style="color: red;"></span><br>From Gurgaon</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------ABOUT ME ---------------- -->
+    <div id="about">
+        <div class="container p-0">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="img-card" src="img/picture.jpg" alt="">
+                    <div class="bio">
+                        <h1>Mudit</h1>
+                        <p>Hello There!!</p>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <div class="glass w-100 p-3">
+                        <p style="text-align: justify;">"Highly motivated computer science student with a passion for coding and software development. Proficient in programming
+                            languages such as Java, Python, and C++. Experienced in software development methodologies and agile project management. 
+                            Seeking an internship opportunity to apply and expand my technical skills in a professional setting."</p>    
+                    </div>
+                    
+                        <div class='glass tab-titles p-3 flex-sm-wrap'>
+                            <p class="tab-links active-link" onclick="opentab('tab-1')">{Soft-Skills}</p>
+                            <p class="tab-links" onclick="opentab('tab-2')">{Certificates}</p>
+                            <p class="tab-links" onclick="opentab('tab-3')">{Education}</p>
+                        </div>
+                        <div class=" glass tab-contents active-tab" id="tab-1">
+                            <ul>
+                                <li>Strong communication</li>
+                                <li>Interpersonal skills</li>
+                                <li>confident</li>
+                                <li>Proficient in the use of Information technology</li>
+                                <li>Project Management</li>
+                                <li>Learning</li>
+                                <li>Problem solving</li>
+                            </ul>
+                        </div>
+
+                        <div class=" glass tab-contents" id="tab-2">
+                            <ul>
+                                <li>Probability and Statistics</li>
+                                <li>Problem Solving Through Programming in C</li>
+                                <li>Academic Paper Writing and IPR</li>
+                                <li>Internet Of Things</li>
+                                <li>Time Management and Ways Of Thinking</li>
+                                <li>Web Development using HTML5 and CSS</li>
+                                <li>Developing Front-End Apps with React</li>
+                                <li>Python Project for AI & Application Development</li>
+                            </ul>
+                        </div>
+
+                        <div class=" glass tab-contents" id="tab-3">
+                            <ul>
+                                <li><span style="color: white;">2021 - Present</span><br>B.E Computer Science, Chandigarh University</li>
+                                <li><span style="color: white;">2020-2021</span><br>Intermediate (CBSE), Vivekanand Global School</li>
+                                <li><span style="color: white;">2018-2019</span><br>Matriculation (CBSE), Vivekanand Global School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-3">
+    </div>
+<!-- ---------skills---------- -->
+
+
+<div id='skills' class="mt-0">
+    <div class="container" >
+        <h1 class="sub-titles mt-3">Skills</h1>
+        <div class="container-fluid d-flex m-2 flex-wrap">        
+            <div class="container-fluid glass mb-3">
+                <h6 class=' text-light'>Programing Skills</h6>
+                <hr>
+                <ul class='skills-list d-flex flex-wrap'>
+                    <li><img src="/img/C.png" alt="C Programming"></li>
+                    <li><img src="/img/C++.png" alt="C++ Programming"></li>
+                    <li><img src="/img/Java.png" alt="Java Programming"></li>
+                    <li><img src="/img/Python.png" alt="python Programming"></li>  
+                    <li><img src="/img/DS.jpg" alt="Data Structures"></li>              
+                </ul>
+            </div>
+            
+            <div class="container glass mb-3">
+                <h6 class='d-flex justify-content-center text-light'>FrontEnd Skills</h6>
+                <hr>
+                <ul class="skills-list frontend d-flex flex-wrap">
+                    <li><img src="/img/HTML.png" alt="Html"></li>
+                    <li><img src="/img/CSS.png" alt="CSS"></li>
+                    <li><img src="/img/JS.png" alt="JavaScript"></li>
+                    <li><img src="/img/REACT.png" alt="React"></li>
+                    <li><img src="/img/bootstrap.jpeg" alt="Bootstrap"></li>
+                </ul>
+            </div>
+
+            <div class="container glass mb-3">
+                <h6 class='d-flex justify-content-center text-light'>BackEnd Skills</h6>
+                <hr>
+                <ul class="skills-list flex-wrap">
+                    <li><img src="/img/dbms.png" alt="DBMS"></li>
+                    <li><img src="/img/sql.jpeg" alt="SQL"></li>
+                    <li><img src="/img/mongodb.png" alt="MongoDB"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="m-3">
+</div>
+
+
+<!-- -----------projects--------- -->
+
+<div id="projects">
+    <div class="container d-flex flex-column justify-content-center">
+        <h1 class="sub-titles">My Projects</h1>
+        <aside>To know more TAP <i class="fa-solid fa-hand-point-up"></i> on the project banner !!</aside>
+        <div class="projects-list">
+            <div class="project glass">
+                <img src="img/home-automation.jpg" alt="">
+                <div class="layer container">
+                    <h3>Research Paper on Home Automation</h3>
+                    <p>The main purpose of home automation is to provide ease to people to control different home appliances.</p>
+                    <a href="#"><i class="fa-solid fa-scroll"></i></a>
+                </div>
+            </div>
+            
+            <div class="project glass">
+                <img src="img/gym.jpg" alt="">
+                <div class="layer">
+                    <h3>Gym Membership Website</h3>
+                    <p>Having a website for your fitness center is a great way to reach people who may not know about you.</p>
+                    <a href="#"><i class="fa-solid fa-dumbbell"></i></a>
+                </div>
+            </div>
+
+            <div class="project glass">
+                <img src="img/portfolio.jpg" alt="">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A portfolio website is a collection of a professional's best work, which can be shared with potential clients, employers, or collaborators. </p>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+
+            <div class="project glass">
+                <img src="img/titac toe.jpeg" alt="">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p class="d-flex flex-wrap">Tic-tac-toe is a game in which two players take turns in drawing either an ` O' or an ` X' in one square of a grid consisting of nine squares.</p>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+
+            <div class="project glass">
+                <img src="img/news-microphone-air-vertical-21448290.webp" alt="">
+                <div class="layer">
+                    <h3>NEWS APP</h3>
+                    <p>A Real Time NEWS generator which fetch the real time news from the NEWS API and present them in differenet categories.</p>
+                    <a href="#"><i class="fa-regular fa-newspaper"></i></a>
+                </div>
+            </div>
+
+
+            <div class="project glass">
+                <img src="img/to-do.jpg" alt="">
+                <div class="layer">
+                    <h3>To-do List Website</h3>
+                    <p>Your Own personal NoteBook over the cloud where you can login in to your account and can easily ADD, DELETE and Modify your notes</p>
+                    <a href="#"><i class="fa-solid fa-note-sticky"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#projects" class="btn glass">See More</a>
+    </div>
+    <hr class="m-3">
+</div>
+
+
+<!-- -----contacts--------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left d-flex flex-column justify-content-center">
+                <h1 class="sub-titles glass">Contact Me...</h1>
+                <p class="glass"><i class="fa-solid fa-paper-plane"></i> rohillamudit679@gmail.com</p>
+                <p class="glass"><i style="color: green;" class="fa-solid fa-phone"></i> +91 8810582388</p>
+                <div class="social-icons ">
+                    <a href="mailto:rohillamudit679@gmail.com" target="_blank" id="mail"><i class="fa-regular fa-envelope glass"></i></a>
+                    <a href="https://www.instagram.com/mudit_rohilla/" target="_blank" id="insta"><i class="fa-brands fa-instagram glass"></i></a>
+                    <a href="https://www.linkedin.com/in/mudit-rohilla-43a031232/" target="_blank" id="link"><i class="fa-brands fa-linkedin glass"></i></a>
+                    <a href="https://github.com/MuditRohilla1" target="_blank" id="git"><i class="fa-brands fa-github glass"></i></a>
+                </div>
+                <a href="img/MUDIT's Resume.pdf" download class="btn btn2 glassred">Download CV</a>
+            </div>
+
+            <div class="contact-right glass">
+                <form name='submit-to-google-sheet' class="d-flex flex-column justify-content-center">
+                    <input type="text" name="Name" placeholder="Your Name" class="glass2" required>
+                    <input type="email" name="Email" placeholder="Your Email" class="glass2" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" class="glass2"></textarea>
+                    <button type="submit" class="btn btn2 glassred">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <hr class="m-3">
+</div>
+
+<footer>
+    <div class="copyright">
+        <p>copyright &#169 || Mudit Rohilla || Since 2023</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.auto-type', {
+    strings: ['Mudit','a Cse Student', 'a Web Developer'],
+    typeSpeed: 150,
+    backSpeed: 250,
+    loop: true
+    });
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzFbgFAMpygtPyKQYe9tETQT-WqrICQxknQCuGZP2mID_sUvO9Nv2ZKuzFHO5FuURlQPQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Submitted Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+    const list = document.querySelectorAll('.list');
+    function activelink()
+    {
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) =>
+    item.addEventListener('click',activelink));
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
